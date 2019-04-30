@@ -33,6 +33,7 @@ The initial configuration is just following the screens, so everything is very e
 * Set a hostname
 * Install vim
 * Turn off the wifi (since I only want to use wires for my little servers)
+* Turn off the irritating red power led
 * Turn on ssh
 * Set a static ip address (since I don't have a local named server, kinda overkill for this system)
 * Add a custom user for the servers
@@ -60,6 +61,16 @@ Since I am using a small local switch, I want to turn off the wifi.  This is don
 #  Turn off wifi
 #
 dtoverlay=pi3-disable-wifi
+```
+
+### Turn of the red power led
+
+If you are like me, then the red led power light get irritating.  Add these to the /boot/config.txt to turn off the light.
+
+```bash
+# Disable the PWR LED.
+dtparam=pwr_led_trigger=none
+dtparam=pwr_led_activelow=off
 ```
 
 ### Turn on ssh
