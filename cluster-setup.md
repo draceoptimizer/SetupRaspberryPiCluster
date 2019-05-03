@@ -1,5 +1,7 @@
 # Cluster Setup and Design
 
+>**Update this with the latest for rw to the NFS file system**
+
 The hardware components are relatively easy to set up, but now we want to start using our set of nodes in a cluster manner.  This isn't in a cluster, as you see the HPC clusters that are focused on hardware; rather, as a set of software clusters that make logical use of the system to solve problems.  Using this approach, this material will use some docker images to process jobs.  In particular, this projects sets up a simple swarm for microservices and runs jobs through docker for longer running jobs.
 
 The use case for this model is:
