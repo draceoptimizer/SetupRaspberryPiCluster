@@ -21,4 +21,18 @@ The goals for customizing the image are:
 
 ##  Using the latest python image
 
-On the master node, create 
+On the master node, create _(within this repository)_ the dockerfile.
+
+I have the following instructions:
+
+```bash
+FROM python:latest
+LABEL version="0.0.0"
+LABEL maintainer="Dr. David Race"
+WORKDIR /WeatherAndElectricity
+```
+
+The first says to using the python:latest docker image, the second and third put version information, and the fourth sets the workdir.
+
+On running the image, I will bind mount my NFS mount point to this workdir.
+
