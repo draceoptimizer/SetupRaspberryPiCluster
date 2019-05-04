@@ -1,5 +1,7 @@
 #  Using Docker
 
+>**I hate to say it, but given the size of this project, using Docker seems like an interesting _(yet very time consuming)_ exercise.  I have decided to abandon this learning activity and focus on the python environment integration since I will likely just use python3 and kotlin for any work I do on this project.:-(  This just has too much overhead for a simple cluster.**
+
 This describes the use case and methodology for using the docker images for running application codes.  
 
 ## Use Case
